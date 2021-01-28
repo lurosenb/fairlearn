@@ -1,0 +1,25 @@
+{
+    "adult": {
+        "name": "adult",
+        "url": "http://archive.ics.uci.edu/ml/machine-learning-databases/adult/adult.data",
+        "categorical_columns": "workclass,education,marital-status,occupation,relationship,race,sex,native-country,earning-class", 
+        "columns":"age,workclass,fnlwgt,education,education-num,marital-status,occupation,relationship,race,sex,capital-gain,capital-loss,hours-per-week,native-country,earning-class",
+        "target": "earning-class",
+        "header": "f",
+        "sep": ",",
+        "imbalanced": "t",
+        "zipped": "f"
+    },
+    "bank": {
+        "name": "bank",
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank.zip",
+        "categorical_columns": "job,marital,education,default,housing,loan,contact,month,poutcome,yesno", 
+        "columns":"age,job,marital,education,default,balance,housing,loan,contact,day,month,duration,campaign,pdays,previous,poutcome,yesno",
+        "target": "yesno",
+        "header": "t",
+        "sep": ";",
+        "imbalanced": "t",
+        "zipped": "t",
+        "zip_name": "bank-full.csv"
+    }
+}

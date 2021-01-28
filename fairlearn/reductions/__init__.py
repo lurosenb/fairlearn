@@ -17,6 +17,7 @@ from ._moments import (DemographicParity, EqualizedOdds,  # noqa: F401
                        FalsePositiveRateParity)   # noqa: F401
 from ._moments import BoundedGroupLoss, SquareLoss, ZeroOneLoss  # noqa: F401
 from ._moments import ClassificationMoment, LossMoment  # noqa: F401
+from ._fairlet_clustering import FairletKMeans
 
 _exponentiated_gradient = [
     "ExponentiatedGradient",
@@ -43,4 +44,8 @@ _moments = [
     "ZeroOneLoss"
 ]
 
-__all__ = [] + _exponentiated_gradient + _grid_search + _moments
+_fairlet_clustering = [
+    "FairletKMeans",
+]
+
+__all__ = [] + _exponentiated_gradient + _grid_search + _moments + _fairlet_clustering
